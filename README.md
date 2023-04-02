@@ -2,7 +2,7 @@
 
 Port of [blingfire-ruby](https://github.com/ankane/blingfire-ruby) to Crystal
 
-GPT-2 tokenizer (compatible with ChatGPT) that is working well somehow.
+GPT-2 tokenizer (compatible with ChatGPT) that is working somehow.
 
 
 ```sh
@@ -10,6 +10,10 @@ git clone https://github.com/kojix2/blingfire-crystal
 crystal run downloader.cr
 crystal spec
 ```
+
+Note: This is a port of ankane/blingfire-ruby, which I made in a great hurry. It has passed the minimum testing, but I think there are still some bugs. Please use with caution.
+
+Bug reports are welcome, but pull requests and forks are far more welcome.
 
 ## example
 
@@ -39,7 +43,3 @@ text = model.ids_to_text(tokens)
 # Print the text
 puts text
 ```
-
-Note: This is a port of ankane/blingfire-ruby, which I made in a great hurry. It has passed the minimum testing, but I think there are still some bugs. Please use with caution.
-
-Bug reports are welcome, but pull requests and forks are far more welcome.
