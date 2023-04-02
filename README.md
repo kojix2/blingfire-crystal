@@ -4,6 +4,13 @@ Port of [blingfire-ruby](https://github.com/ankane/blingfire-ruby) to Crystal
 
 GPT-2 tokenizer (compatible with ChatGPT) that is working well somehow.
 
+
+```sh
+git clone https://github.com/kojix2/blingfire-crystal
+crystal run downloader.cr
+crystal spec
+```
+
 ## example
 
 gpt2.cr in example directory
