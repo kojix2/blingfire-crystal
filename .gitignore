@@ -1,0 +1,7 @@
+*.lock
+*.so
+*.dylib
+*.dll
+
+*.bin
+*.i2w
