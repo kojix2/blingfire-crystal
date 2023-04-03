@@ -5,15 +5,9 @@ authors:
   - kojix2 <2xijok@gmail.com>
 
 description: |
-  text tokenizer for Crystal
+  Blingfire Bindings for Crystal
 
-# dependencies:
-#   pg:
-#     github: will/crystal-pg
-#     version: "~> 0.5"
-
-# development_dependencies:
-#   webmock:
-#     github: manastech/webmock.cr
+scripts:
+  postinstall: crystal download_blingfire.cr
 
 license: MIT

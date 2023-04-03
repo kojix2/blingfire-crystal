@@ -1,5 +1,5 @@
 module BlingFire
-  #@[Link("blingfire")]
+  # @[Link("blingfire")]
   @[Link(ldflags: "-L #{__DIR__} -l blingfiretokdll -Wl,-rpath,#{__DIR__}")]
   lib LibBlingFire
     # version
