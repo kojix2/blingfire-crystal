@@ -15,5 +15,5 @@ jobs:
         with:
           crystal: latest
       - run: crystal run downloader.cr
-      - run: crsytal spec
+      - run: crystal spec
 
