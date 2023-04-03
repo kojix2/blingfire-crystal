@@ -1,9 +1,10 @@
-# blingfire-crystal
+# BlingFire for Crystal
 
-Port of [blingfire-ruby](https://github.com/ankane/blingfire-ruby) to Crystal
+[![build](https://github.com/kojix2/blingfire-crystal/actions/workflows/build.yml/badge.svg)](https://github.com/kojix2/blingfire-crystal/actions/workflows/build.yml)
 
-GPT-2 tokenizer (compatible with ChatGPT) that is working somehow.
+This is a Crystal port of the [blingfire-ruby](https://github.com/ankane/blingfire-ruby). This port aims to bring the power of [BlingFire](https://github.com/microsoft/BlingFire) tokenizers to Crystalists. This library allows you to run GPT-2 tokenization compatible with [ChatGPT](https://chat.openai.com/).
 
+## Installation
 
 ```sh
 git clone https://github.com/kojix2/blingfire-crystal
@@ -11,13 +12,11 @@ crystal run downloader.cr
 crystal spec
 ```
 
-Note: This is a port of ankane/blingfire-ruby, which I made in a great hurry. It has passed the minimum testing, but I think there are still some bugs. Please use with caution.
-
-Bug reports are welcome, but pull requests and forks are far more welcome.
+downloader.cr downloads compiled libraries from [ankane/ml-builds](https://github.com/ankane/ml-builds). It also downloads [some models](https://github.com/microsoft/BlingFire/tree/master/dist-pypi/blingfire) from the official BlingFire repository.
 
 ## example
 
-gpt2.cr in example directory
+See gpt2.cr in example directory
 
 ```crystal
 require "../src/blingfire"
@@ -43,3 +42,15 @@ text = model.ids_to_text(tokens)
 # Print the text
 puts text
 ```
+
+## Documentation
+
+- [blingfire-crystal](https://kojix2.github.io/blingfire-crystal/)
+
+## Development
+
+This port is a hurried work based on ankane/blingfire-ruby. It has passed basic tests, but there might still exist some undiscovered bugs. Please use it with care and report any issues you find. Pull requests and forks are much appreciated.
+
+## License
+
+This project is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more information.
