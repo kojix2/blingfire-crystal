@@ -3,7 +3,7 @@ require "../src/blingfire/model"
 
 describe BlingFire::Model do
   it "should load a model" do
-    model = BlingFire::Model.new("gpt2.bin")
+    model = BlingFire::Model.new("spec/fixtures/gpt2.bin")
     model.should_not be_nil
   end
 

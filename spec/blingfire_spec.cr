@@ -1,3 +1,4 @@
+require "spec"
 require "../src/blingfire"
 
 describe BlingFire do
