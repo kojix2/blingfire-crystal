@@ -1,9 +1,6 @@
 module BlingFire
-  {% if env("GRDIR") %}
-    @[Link(ldflags: "-L #{__DIR__} -l blingfiretokdll -Wl,-rpath,#{__DIR__}")]
-  {% else %}
-    @[Link("blingfire")]
-  {% end %}
+  #@[Link("blingfire")]
+  @[Link(ldflags: "-L #{__DIR__} -l blingfiretokdll -Wl,-rpath,#{__DIR__}")]
   lib LibBlingFire
     # version
     fun GetBlingFireTokVersion : Int32
