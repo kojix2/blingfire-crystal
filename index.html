@@ -83,23 +83,27 @@
 
 
 <div class="main-content">
-<h1><a id="blingfire-crystal" class="anchor" href="#blingfire-crystal">  <svg class="octicon-link" aria-hidden="true">
+<h1><a id="bling-fire-for-crystal" class="anchor" href="#bling-fire-for-crystal">  <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
   </svg>
-</a>blingfire-crystal</h1>
-<p>Port of <a href="https://github.com/ankane/blingfire-ruby">blingfire-ruby</a> to Crystal</p>
-<p>GPT-2 tokenizer (compatible with ChatGPT) that is working somehow.</p>
+</a>BlingFire for Crystal</h1>
+<p><a href="https://github.com/kojix2/blingfire-crystal/actions/workflows/build.yml"><img src="https://github.com/kojix2/blingfire-crystal/actions/workflows/build.yml/badge.svg" alt="build" /></a></p>
+<p>This is a Crystal port of the <a href="https://github.com/ankane/blingfire-ruby">blingfire-ruby</a>. This port aims to bring the power of <a href="https://github.com/microsoft/BlingFire">BlingFire</a> tokenizers to Crystalists. This library allows you to run GPT-2 tokenization compatible with <a href="https://chat.openai.com/">ChatGPT</a>.</p>
+<h2><a id="installation" class="anchor" href="#installation">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Installation</h2>
 <pre><code class="language-sh">git clone https://github.com/kojix2/blingfire-crystal
 crystal run downloader.cr
 crystal spec</code></pre>
-<p>Note: This is a port of ankane/blingfire-ruby, which I made in a great hurry. It has passed the minimum testing, but I think there are still some bugs. Please use with caution.</p>
-<p>Bug reports are welcome, but pull requests and forks are far more welcome.</p>
+<p>downloader.cr downloads compiled libraries from <a href="https://github.com/ankane/ml-builds">ankane/ml-builds</a>. It also downloads <a href="https://github.com/microsoft/BlingFire/tree/master/dist-pypi/blingfire">some models</a> from the official BlingFire repository.</p>
 <h2><a id="example" class="anchor" href="#example">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
   </svg>
 </a>example</h2>
-<p>gpt2.cr in example directory</p>
+<p>See gpt2.cr in example directory</p>
 <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;../src/blingfire&quot;</span>
 
 <span class="c"># Load the model</span>
@@ -122,6 +126,26 @@ text <span class="o">=</span> model.ids_to_text(tokens)
 
 <span class="c"># Print the text</span>
 puts text</code></pre>
+<h2><a id="documentation" class="anchor" href="#documentation">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Documentation</h2>
+<ul>
+<li><a href="https://kojix2.github.io/blingfire-crystal/">blingfire-crystal</a></li>
+</ul>
+<h2><a id="development" class="anchor" href="#development">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Development</h2>
+<p>This port is a hurried work based on ankane/blingfire-ruby. It has passed basic tests, but there might still exist some undiscovered bugs. Please use it with care and report any issues you find. Pull requests and forks are much appreciated.</p>
+<h2><a id="license" class="anchor" href="#license">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>License</h2>
+<p>This project is licensed under the MIT License. Please see the <a href="LICENSE">LICENSE</a> file for more information.</p>
 </div>
 </body>
 </html>
